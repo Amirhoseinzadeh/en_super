@@ -1,0 +1,18 @@
+[
+  {
+    "level": "C2",
+    "text": "Once upon a time, there was an *able* young student who loved to *learn*. She lived in a *beautiful* village and always tried to *improve* her English skills. One day, she decided to *explore* the forest to find new *words*.",
+    "questions": [
+      {
+        "word": "able",
+        "options": ["قادر، ماهر", "خسته", "بی‌حوصله", "ناتوان"],
+        "correctAnswer": "قادر، ماهر"
+      },
+      {
+        "word": "learn",
+        "options": ["یاد گرفتن", "فراموش کردن", "نادیده گرفتن", "تکرار کردن"],
+        "correctAnswer": "یاد گرفتن"
+      }
+    ]
+  }
+]
