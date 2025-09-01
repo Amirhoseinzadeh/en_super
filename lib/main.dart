@@ -3,10 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:flutter/foundation.dart' show compute;
 import 'app.dart';
 import 'data/models/vocab_model.dart';
 import 'data/models/progress_model.dart';
 import 'data/models/leaderboard_entry.dart';
+import 'data/models/user_profile.dart';
+import 'package:flutter/services.dart' show rootBundle;
+import 'dart:convert';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
@@ -55,12 +59,16 @@ Future<void> initializeProgress() async {
   }
 }
 
+Future<List<VocabModel>> _loadVocabsIsolate(String jsonString) async {
+  final List<dynamic> jsonList = json.decode(jsonString);
+  return jsonList.map((json) => VocabModel.fromJson(json)).toList();
+}
 
 Future<void> initializeVocabs() async {
   final box = await Hive.openBox('vocabs');
   if (box.isEmpty) {
     final datasource = LocalDatasource();
-    await datasource.loadVocabs(page: 0, pageSize: 50); // لود اولیه 50 لغت
+    await datasource.loadVocabs(page: 0, pageSize: 20); // کاهش pageSize به 20
   }
 }
 
@@ -79,18 +87,34 @@ Future<void> initializeLeaderboard() async {
   }
 }
 
+Future<void> initializeUserProfile() async {
+  final box = await Hive.openBox('profiles');
+  if (box.isEmpty) {
+    await box.put(
+      'user1',
+      UserProfile(
+        userId: 'user1',
+        username: 'کاربر نمونه',
+      ),
+    );
+  }
+}
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
   Hive.registerAdapter(VocabModelAdapter());
   Hive.registerAdapter(ProgressModelAdapter());
   Hive.registerAdapter(LeaderboardEntryAdapter());
+  Hive.registerAdapter(UserProfileAdapter());
   await Hive.openBox('progress');
   await Hive.openBox('vocabs');
   await Hive.openBox('leaderboard');
+  await Hive.openBox('profiles');
   await initializeProgress();
   await initializeVocabs();
   await initializeLeaderboard();
+  await initializeUserProfile();
   await initializeNotifications();
   runApp(ProviderScope(child: VocabLearnerApp()));
 }

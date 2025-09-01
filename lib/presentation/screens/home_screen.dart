@@ -9,6 +9,7 @@ import '../providers/vocab_provider.dart';
 import 'level_screen.dart';
 import 'statistics_screen.dart';
 import 'leaderboard_screen.dart';
+import 'profile_screen.dart';
 import '../../domain/usecases/daily_challenge_usecase.dart';
 
 final dailyChallengeUseCaseProvider = Provider<DailyChallengeUseCase>((ref) {
@@ -96,6 +97,26 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 context,
                 PageRouteBuilder(
                   pageBuilder: (context, animation, secondaryAnimation) => const LeaderboardScreen(),
+                  transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                    return SlideTransition(
+                      position: Tween<Offset>(
+                        begin: const Offset(1.0, 0.0),
+                        end: Offset.zero,
+                      ).animate(animation),
+                      child: child,
+                    );
+                  },
+                ),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.person),
+            onPressed: () {
+              Navigator.push(
+                context,
+                PageRouteBuilder(
+                  pageBuilder: (context, animation, secondaryAnimation) => const ProfileScreen(),
                   transitionsBuilder: (context, animation, secondaryAnimation, child) {
                     return SlideTransition(
                       position: Tween<Offset>(

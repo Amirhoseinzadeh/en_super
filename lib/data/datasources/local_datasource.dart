@@ -4,9 +4,10 @@ import 'package:hive/hive.dart';
 import '../models/vocab_model.dart';
 import '../models/progress_model.dart';
 import '../models/leaderboard_entry.dart';
+import '../models/user_profile.dart';
 
 class LocalDatasource {
-  Future<List<VocabModel>> loadVocabs({int page = 0, int pageSize = 50}) async {
+  Future<List<VocabModel>> loadVocabs({int page = 0, int pageSize = 20}) async { // کاهش pageSize به 20
     try {
       final jsonString = await rootBundle.loadString('assets/data/vocab.json');
       final List<dynamic> jsonList = json.decode(jsonString);
@@ -71,6 +72,25 @@ class LocalDatasource {
     } catch (e) {
       print('Error getting leaderboard: $e');
       return [];
+    }
+  }
+
+  Future<void> saveUserProfile(UserProfile profile) async {
+    try {
+      final box = await Hive.openBox('profiles');
+      await box.put(profile.userId, profile);
+    } catch (e) {
+      print('Error saving profile: $e');
+    }
+  }
+
+  Future<UserProfile?> getUserProfile(String userId) async {
+    try {
+      final box = await Hive.openBox('profiles');
+      return box.get(userId);
+    } catch (e) {
+      print('Error getting profile: $e');
+      return null;
     }
   }
 }

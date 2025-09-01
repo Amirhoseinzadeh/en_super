@@ -1,7 +1,137 @@
 [
   {
+    "level": "A1",
+    "text": "This is a *dog*. It is very *happy*. The dog likes to *play* in the park. Every day, it runs with its *friend*, a small cat. They have fun together.",
+    "questions": [
+      {
+        "word": "dog",
+        "options": ["سگ", "گربه", "پرنده", "ماهی"],
+        "correctAnswer": "سگ"
+      },
+      {
+        "word": "happy",
+        "options": ["خوشحال", "ناراحت", "خسته", "گرسنه"],
+        "correctAnswer": "خوشحال"
+      },
+      {
+        "word": "play",
+        "options": ["بازی کردن", "خوابیدن", "خوردن", "دویدن"],
+        "correctAnswer": "بازی کردن"
+      },
+      {
+        "word": "friend",
+        "options": ["دوست", "دشمن", "غریبه", "همسایه"],
+        "correctAnswer": "دوست"
+      }
+    ]
+  },
+  {
+    "level": "A2",
+    "text": "Mary lives in a *house* with her *family*. She loves to *learn* new things at school. Every weekend, she goes to *travel* to a nearby city with her parents.",
+    "questions": [
+      {
+        "word": "house",
+        "options": ["خانه", "مدرسه", "فروشگاه", "پارک"],
+        "correctAnswer": "خانه"
+      },
+      {
+        "word": "family",
+        "options": ["خانواده", "دوست", "همکار", "همسایه"],
+        "correctAnswer": "خانواده"
+      },
+      {
+        "word": "learn",
+        "options": ["یاد گرفتن", "فراموش کردن", "نادیده گرفتن", "تکرار کردن"],
+        "correctAnswer": "یاد گرفتن"
+      },
+      {
+        "word": "travel",
+        "options": ["سفر کردن", "ماندن", "کار کردن", "خوابیدن"],
+        "correctAnswer": "سفر کردن"
+      }
+    ]
+  },
+  {
+    "level": "B1",
+    "text": "John has a new *job* as a teacher. He enjoys his *hobby* of reading books. He eats *healthy* food to stay strong. He will *decide* where to go on vacation soon.",
+    "questions": [
+      {
+        "word": "job",
+        "options": ["شغل", "تعطیلات", "سرگرمی", "درس"],
+        "correctAnswer": "شغل"
+      },
+      {
+        "word": "hobby",
+        "options": ["سرگرمی", "کار", "وظیفه", "مشکل"],
+        "correctAnswer": "سرگرمی"
+      },
+      {
+        "word": "healthy",
+        "options": ["سالم", "ناسالم", "خسته", "گرسنه"],
+        "correctAnswer": "سالم"
+      },
+      {
+        "word": "decide",
+        "options": ["تصمیم گرفتن", "نادیده گرفتن", "توقف کردن", "شروع کردن"],
+        "correctAnswer": "تصمیم گرفتن"
+      }
+    ]
+  },
+  {
+    "level": "B2",
+    "text": "Anna wants to *improve* her English to learn about *culture*. She cares about the *environment* and tries to make good *decisions* to protect nature.",
+    "questions": [
+      {
+        "word": "improve",
+        "options": ["بهبود دادن", "توقف کردن", "تکرار کردن", "نادیده گرفتن"],
+        "correctAnswer": "بهبود دادن"
+      },
+      {
+        "word": "culture",
+        "options": ["فرهنگ", "طبیعت", "کار", "آموزش"],
+        "correctAnswer": "فرهنگ"
+      },
+      {
+        "word": "environment",
+        "options": ["محیط زیست", "شهر", "مدرسه", "خانه"],
+        "correctAnswer": "محیط زیست"
+      },
+      {
+        "word": "decision",
+        "options": ["تصمیم", "مشکل", "ایده", "پیشنهاد"],
+        "correctAnswer": "تصمیم"
+      }
+    ]
+  },
+  {
+    "level": "C1",
+    "text": "Mark loves to *explore* new places and meet *resilient* people. His *ambitious* goals drive him to learn about *technology* every day.",
+    "questions": [
+      {
+        "word": "explore",
+        "options": ["کاوش کردن", "ماندن", "فراموش کردن", "تکرار کردن"],
+        "correctAnswer": "کاوش کردن"
+      },
+      {
+        "word": "resilient",
+        "options": ["انعطاف‌پذیر", "ضعیف", "بی‌صبر", "خسته"],
+        "correctAnswer": "انعطاف‌پذیر"
+      },
+      {
+        "word": "ambitious",
+        "options": ["جاه‌طلب", "تنبل", "بی‌علاقه", "ساده"],
+        "correctAnswer": "جاه‌طلب"
+      },
+      {
+        "word": "technology",
+        "options": ["تکنولوژی", "طبیعت", "فرهنگ", "ورزش"],
+        "correctAnswer": "تکنولوژی"
+      }
+    ]
+  },
+  {
     "level": "C2",
-    "text": "Once upon a time, there was an *able* young student who loved to *learn*. She lived in a *beautiful* village and always tried to *improve* her English skills. One day, she decided to *explore* the forest to find new *words*.",
+    "text": "Once upon a time, there was an *able* young student who loved to *learn*. She lived in a *beautiful* village and always tried to *improve* her English skills. Her *sophisticated* approach and *articulate* speech amazed everyone.",
     "questions": [
       {
         "word": "able",
@@ -12,6 +142,21 @@
         "word": "learn",
         "options": ["یاد گرفتن", "فراموش کردن", "نادیده گرفتن", "تکرار کردن"],
         "correctAnswer": "یاد گرفتن"
+      },
+      {
+        "word": "beautiful",
+        "options": ["زیبا", "زشت", "معمولی", "خطرناک"],
+        "correctAnswer": "زیبا"
+      },
+      {
+        "word": "sophisticated",
+        "options": ["پیچیده، با تجربه", "ساده", "خام", "ابتدایی"],
+        "correctAnswer": "پیچیده، با تجربه"
+      },
+      {
+        "word": "articulate",
+        "options": ["شیوا، رسا", "مبهم", "آرام", "ساکت"],
+        "correctAnswer": "شیوا، رسا"
       }
     ]
   }

@@ -1,5 +1,185 @@
 [
   {
+    "word": "hello",
+    "pronunciation": "/həˈloʊ/",
+    "definition": "A greeting used when meeting someone.",
+    "example": "She said hello to her friend.",
+    "persian": "سلام",
+    "level": "A1",
+    "category": "Daily Life"
+  },
+  {
+    "word": "eat",
+    "pronunciation": "/iːt/",
+    "definition": "To consume food.",
+    "example": "I eat breakfast every morning.",
+    "persian": "خوردن",
+    "level": "A1",
+    "category": "Daily Life"
+  },
+  {
+    "word": "friend",
+    "pronunciation": "/frend/",
+    "definition": "A person you like and enjoy spending time with.",
+    "example": "He is my best friend.",
+    "persian": "دوست",
+    "level": "A1",
+    "category": "Daily Life"
+  },
+  {
+    "word": "book",
+    "pronunciation": "/bʊk/",
+    "definition": "A set of pages with writing or pictures.",
+    "example": "I read a book every night.",
+    "persian": "کتاب",
+    "level": "A1",
+    "category": "Education"
+  },
+  {
+    "word": "house",
+    "pronunciation": "/haʊs/",
+    "definition": "A building where people live.",
+    "example": "They live in a big house.",
+    "persian": "خانه",
+    "level": "A2",
+    "category": "Daily Life"
+  },
+  {
+    "word": "learn",
+    "pronunciation": "/lɜːrn/",
+    "definition": "To gain knowledge or skill.",
+    "example": "I want to learn English.",
+    "persian": "یاد گرفتن",
+    "level": "A2",
+    "category": "Education"
+  },
+  {
+    "word": "family",
+    "pronunciation": "/ˈfæm.ɪ.li/",
+    "definition": "A group of people related by blood or marriage.",
+    "example": "My family is very supportive.",
+    "persian": "خانواده",
+    "level": "A2",
+    "category": "Daily Life"
+  },
+  {
+    "word": "travel",
+    "pronunciation": "/ˈtræv.əl/",
+    "definition": "To go from one place to another.",
+    "example": "She loves to travel to new places.",
+    "persian": "سفر کردن",
+    "level": "A2",
+    "category": "Travel"
+  },
+  {
+    "word": "job",
+    "pronunciation": "/dʒɑːb/",
+    "definition": "Work that you do to earn money.",
+    "example": "He has a new job at a bank.",
+    "persian": "شغل",
+    "level": "B1",
+    "category": "Work"
+  },
+  {
+    "word": "hobby",
+    "pronunciation": "/ˈhɑː.bi/",
+    "definition": "An activity you enjoy doing in your free time.",
+    "example": "Reading is my favorite hobby.",
+    "persian": "سرگرمی",
+    "level": "B1",
+    "category": "Daily Life"
+  },
+  {
+    "word": "healthy",
+    "pronunciation": "/ˈhel.θi/",
+    "definition": "Good for your physical or mental health.",
+    "example": "Eating vegetables is healthy.",
+    "persian": "سالم",
+    "level": "B1",
+    "category": "Health"
+  },
+  {
+    "word": "decide",
+    "pronunciation": "/dɪˈsaɪd/",
+    "definition": "To make a choice about something.",
+    "example": "She decided to study abroad.",
+    "persian": "تصمیم گرفتن",
+    "level": "B1",
+    "category": "Personal Qualities"
+  },
+  {
+    "word": "improve",
+    "pronunciation": "/ɪmˈpruːv/",
+    "definition": "To make something better.",
+    "example": "She wants to improve her English skills.",
+    "persian": "بهبود دادن",
+    "level": "B2",
+    "category": "Education"
+  },
+  {
+    "word": "decision",
+    "pronunciation": "/dɪˈsɪʒ.ən/",
+    "definition": "A choice made after thinking.",
+    "example": "He made a quick decision.",
+    "persian": "تصمیم",
+    "level": "B2",
+    "category": "Personal Qualities"
+  },
+  {
+    "word": "culture",
+    "pronunciation": "/ˈkʌl.tʃər/",
+    "definition": "The way of life of a group of people.",
+    "example": "I love learning about different cultures.",
+    "persian": "فرهنگ",
+    "level": "B2",
+    "category": "Travel"
+  },
+  {
+    "word": "environment",
+    "pronunciation": "/ɪnˈvaɪ.rən.mənt/",
+    "definition": "The natural world around us.",
+    "example": "We must protect the environment.",
+    "persian": "محیط زیست",
+    "level": "B2",
+    "category": "Nature"
+  },
+  {
+    "word": "explore",
+    "pronunciation": "/ɪkˈsplɔːr/",
+    "definition": "To travel through an area to learn about it.",
+    "example": "They explored the forest.",
+    "persian": "کاوش کردن",
+    "level": "C1",
+    "category": "Travel"
+  },
+  {
+    "word": "resilient",
+    "pronunciation": "/rɪˈzɪl.i.ənt/",
+    "definition": "Able to recover quickly from difficulties.",
+    "example": "She is a resilient person.",
+    "persian": "انعطاف‌پذیر",
+    "level": "C1",
+    "category": "Personal Qualities"
+  },
+  {
+    "word": "ambitious",
+    "pronunciation": "/æmˈbɪʃ.əs/",
+    "definition": "Having a strong desire to succeed.",
+    "example": "He is an ambitious young man.",
+    "persian": "جاه‌طلب",
+    "level": "C1",
+    "category": "Personal Qualities"
+  },
+  {
+    "word": "technology",
+    "pronunciation": "/tekˈnɑː.lə.dʒi/",
+    "definition": "The use of science to solve problems.",
+    "example": "Technology changes our lives.",
+    "persian": "تکنولوژی",
+    "level": "C1",
+    "category": "Technology"
+  },
+  {
     "word": "able",
     "pronunciation": "/ˈeɪ.bl̩/",
     "definition": "Clever or good at doing something.",
@@ -7,5 +187,32 @@
     "persian": "قادر، ماهر",
     "level": "C2",
     "category": "Personal Qualities"
+  },
+  {
+    "word": "sophisticated",
+    "pronunciation": "/səˈfɪs.tɪ.keɪ.tɪd/",
+    "definition": "Having a lot of knowledge or experience.",
+    "example": "The system is very sophisticated.",
+    "persian": "پیچیده، با تجربه",
+    "level": "C2",
+    "category": "Technology"
+  },
+  {
+    "word": "articulate",
+    "pronunciation": "/ɑːrˈtɪk.jə.lət/",
+    "definition": "Able to express thoughts clearly.",
+    "example": "She is an articulate speaker.",
+    "persian": "شیوا، رسا",
+    "level": "C2",
+    "category": "Personal Qualities"
+  },
+  {
+    "word": "profound",
+    "pronunciation": "/prəˈfaʊnd/",
+    "definition": "Having deep meaning or insight.",
+    "example": "His speech had a profound impact.",
+    "persian": "عمیق",
+    "level": "C2",
+    "category": "Education"
   }
 ]
